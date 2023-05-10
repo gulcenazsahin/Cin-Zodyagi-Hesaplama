@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Odev2 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Dogum yilinizi giriniz: ");
+        int dogumYili = input.nextInt();
+
+        String[] cinZodyagi= {"Maymun", "Horoz", "Kopek", "Domuz", "Fare", "Okuz", "Kaplan", "Tavsan", "Ejderha", "Yilan", "At", "Koyun"};
+        String cinZodyagiBurcu = cinZodyagi[dogumYili % 12];
+
+        System.out.println("Cin Zodyagi Burcunuz: " + cinZodyagiBurcu);
+
+    }
+}
